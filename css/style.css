@@ -96,9 +96,13 @@ body{
   font-size: 30px;
   font-weight: 700;
 }
+.country_capital{
+  font-size:24px;
+  font-weight: 600;
+}
 .country_region{
   font-weight: 500;
-  padding: 5px 0 20px;
+  padding: 10px 0;
 }
 .country_info_text{
   padding: 5px 10px;
