@@ -7,7 +7,7 @@ butt.onclick = function(){
 };
 
 function getCountry(element){
-  const country = element.value;
+  let country = element.value;
   const getCountryInfo = (element) =>{
     const xhr = new XMLHttpRequest();
     xhr.open('GET',`https://restcountries.com/v3.1/name/${element}`)
@@ -36,7 +36,7 @@ function getCountry(element){
       countryContainer.insertAdjacentHTML('beforeend', country);
     });
   }
-    getCountryInfo('country')
+  getCountryInfo(country)
 }
 
 
